@@ -1,0 +1,9 @@
+#mapContainer {
+  text-align: center;
+}
+
+#mapid {
+  display: inline-block;
+  height: 480px;
+  width: 520px;
+}
