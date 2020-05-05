@@ -25,24 +25,50 @@
     <title>Home Cooked Location</title>
   </head>
   <body>
-    <nav></nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Home Cooked</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Location <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-sm my-2 my-sm-0" type="submit">Download Menu</button>
+        </form>
+      </div>
+    </nav>
+    <div>
+      <h1 class="text-center">Location</h1>
+    </div>
     <div>
       <div id="mapContainer">
         <div id="mapid"></div>
       </div>
-      <script>
-        var mymap = L.map('mapid').setView([39.438224, -98.694652], 15);
-
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-          maxZoom: 18,
-          id: 'mapbox/streets-v11',
-          tileSize: 512,
-          zoomOffset: -1,
-          accessToken: 'pk.eyJ1IjoiamFzb25tcmFzaCIsImEiOiJjazl1MWEwZDExbTZiM2hxcXJhc2l1cWxlIn0.COE3yFQG4gTct62pMkHnmA'
-        }).addTo(mymap);
-      </script>
-    </div>>
+      <script src="leafletMap.js"></script>
+    </div>
+    <div class="text-center">
+      <h2>Street Address:</h2>
+      <h4>123 Main Street, Osborne, KS 67473</h3>
+      <h2>Phone:</h2>
+      <h4>555-555-5555</h3>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,9 +1,20 @@
+#carouselContainer {
+  text-align: center;
+}
+
+#carousel {
+  display: inline-block;
+  width: 75%;
+  height: auto;
+}
+
 #mapContainer {
   text-align: center;
 }
 
 #mapid {
   display: inline-block;
-  height: 480px;
-  width: 520px;
+  height: 520px;
+  width: 75%;
 }
+
