@@ -1,15 +1,12 @@
-#carouselContainer {
+.alignContainer {
   text-align: center;
 }
 
 .carousel {
   display: inline-block;
-  width: 75%;
-  height: 520px;
-}
-
-#mapContainer {
-  text-align: center;
+  width: 50%;
+  max-width: 720px;
+  height: auto;
 }
 
 #mapid {
@@ -22,29 +19,37 @@
   color: whitesmoke;
 }
 
+.text-box {
+  display: inline-block;
+  width: 75%;
+}
+
+.section {
+  padding-top: 5vh;
+}
+
 .navbar-custom {
   background-color: darkolivegreen;
 }
-
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
   color: wheat;
 }
-/* change the link color */
+
 .navbar-custom .navbar-nav .nav-link {
   color: wheat;
 }
-/* change the color of active or hovered links */
+
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-  color: #ffffff;
+  color: white;
 }
 
 .light-on-dark {
   background-color: darkslategray;
   color: wheat;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .accent-color {
