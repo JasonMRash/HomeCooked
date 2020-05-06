@@ -19,56 +19,59 @@
    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
    crossorigin=""></script>
 
-   <!-- Home Cooked Website CSS -->
+    <!-- Home Cooked Website CSS -->
     <link rel="stylesheet" href="site.css"/>
 
     <title>Home Cooked Location</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Home Cooked</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="light-on-dark">
+      <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="index.html">Home Cooked</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Location <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-sm my-2 my-sm-0 white-text accent-color" type="submit">Download Menu</button>
+          </form>
+        </div>
+      </nav>
+      <div>
+        <h1 class="text-center">Location</h1>
+      </div>
+      <div>
+        <div id="mapContainer">
+          <div id="mapid"></div>
+        </div>
+        <script src="leafletMap.js"></script>
+      </div>
+      <div class="text-center">
+        <h2>Street Address:</h2>
+        <h4>123 Main Street, Osborne, KS 67473</h3>
+        <h2>Phone:</h2>
+        <h4>555-555-5555</h3>
+      </div>
+    </div>
     
-      <div class="collapse navbar-collapse" id="navbarToggle">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="menu.html">Menu</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Location <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-sm my-2 my-sm-0" type="submit">Download Menu</button>
-        </form>
-      </div>
-    </nav>
-    <div>
-      <h1 class="text-center">Location</h1>
-    </div>
-    <div>
-      <div id="mapContainer">
-        <div id="mapid"></div>
-      </div>
-      <script src="leafletMap.js"></script>
-    </div>
-    <div class="text-center">
-      <h2>Street Address:</h2>
-      <h4>123 Main Street, Osborne, KS 67473</h3>
-      <h2>Phone:</h2>
-      <h4>555-555-5555</h3>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
