@@ -11,6 +11,7 @@
      <!-- Home Cooked Website CSS -->
      <link rel="stylesheet" href="site.css"/>
 
+
     <title>Home Cooked</title>
   </head>
   <body>
@@ -47,20 +48,33 @@
       </nav>
       <!-- Page Content -->
       <div>
-        <h1 class="text-center section">Home Cooked</h1>
+        <h1 class="text-center end-section">Home Cooked</h1>
       </div>
       <div class="alignContainer">
         <div>
-          <img class ="carousel" src="img/Fish-Tacos.jpg"/>
+          <img class ="carousel" id="firstImage" src="img/Fish-Tacos.jpg"/>
+          <img class = "carousel" src="img/BBQ Chicken Flatbread.jpg" style="display:none"/>
+          <img class = "carousel" src="img/Pork Loin with Potato Hash.jpg" style="display:none"/>
+        </div>
+        <div class="end-section">
+        <span class="img-width"><button id="previousBtn" class="btn btn-sm my-2 my-sm-0 white-text accent-color">Previous Image</button></span>
+        <span class="img-width"><button id="nextBtn" class="btn btn-sm my-2 my-sm-0 white-text accent-color">Next Image</button></span>
         </div>
       </div>
+      <footer class="footer end-section">
+        <div class= "container">
+          <p class="text-center">&copy; Copyright 2020, Jason Rash</p>
+        </div>
+      </footer>
     </div>
     
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="carousel.js"></script>
   </body>
 </html>

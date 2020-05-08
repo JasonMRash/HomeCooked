@@ -4,15 +4,14 @@
 
 .carousel {
   display: inline-block;
-  width: 50%;
-  max-width: 720px;
-  height: auto;
+  width: 70vh;
+  height: 70vh;
 }
 
 #mapid {
   display: inline-block;
-  height: 520px;
-  width: 75%;
+  height: 60vh;
+  width: 70%;
 }
 
 .white-text {
@@ -21,11 +20,16 @@
 
 .text-box {
   display: inline-block;
-  width: 75%;
+  width: 70%;
 }
 
 .section {
-  padding-top: 5vh;
+  padding-top: 2.5vh;
+}
+
+.end-section {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
 }
 
 .navbar-custom {
@@ -54,4 +58,14 @@
 
 .accent-color {
   background-color: green
+}
+
+.item-width {
+  display:inline-block;
+  width: 70%;
+}
+
+.img-width {
+  display:inline-block;
+  width: 25%
 }
