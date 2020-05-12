@@ -49,8 +49,15 @@
           <h1 class="text-center">Contact Us</h1>
         </div>
         <div>
-          <form>
-            
+          <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" name ="userEmail" class="form-control" id="email" placeholder="Enter email" required>
+            <div class="form-group">
+              <label for="textarea">Message</label>
+              <textarea class="form-control" name="userMessage" id="textarea" rows="4"></textarea>
+            </div>
+            <button id="contactSubmit" type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
         <footer class="footer end-section">

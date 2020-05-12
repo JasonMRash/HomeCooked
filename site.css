@@ -62,9 +62,12 @@
 
 .item-width {
   display:inline-block;
-  width: 70%;
+  width: 90%;
 }
 
+.item-font {
+  font-size: 36px;
+}
 .img-width {
   display:inline-block;
   width: 25%
