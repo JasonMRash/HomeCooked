@@ -34,7 +34,7 @@ previousButton.addEventListener("click", () => {
 })
 
 // should I add in a stop inteval 
-AutoCarousel = setInterval(() => {
+autoCarousel = setInterval(() => {
   if (currentPicture.nextElementSibling){
     currentPicture.style.display="none";
     currentPicture = currentPicture.nextElementSibling;
