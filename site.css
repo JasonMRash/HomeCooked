@@ -12,8 +12,8 @@
 
 #mapid {
   display: inline-block;
-  height: 60vh;
-  width: 70%;
+  height: 60%;
+  width: 60%;
 }
 
 .white-text {
@@ -69,7 +69,7 @@
 }
 
 .item-font {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .img-width {
   display:inline-block;
@@ -78,4 +78,17 @@
 
 .textSpacing {
   line-height: 1.8;
+}
+
+.scroll-box {
+  display:inline-block;
+  width: 60vw;
+  max-height: 60vh;
+  overflow: scroll;
+}
+
+.scroll-img {
+  display:inline-block;
+  width: 58.5vw;
+  height: auto;
 }
